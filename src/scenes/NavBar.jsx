@@ -1,9 +1,9 @@
 const NavBar = () => {
     return (
-        <nav className="z-40 w-full fixed top-0 py-6 bg-neutraldarkgray">
+        <nav className="z-40 w-full fixed top-0 py-6 bg-secondary">
             <div
                 className="flex items-center justify-between
-                mx-auto w-5/6"
+                mx-auto w-11/12"
             >
                 <h4 className="text-3xl font-bold text-white">Volkwyn Enterprises</h4>
                 <div className="flex justify-between gap-4">
