@@ -18,8 +18,8 @@
   }
 
   .panel {
-    @apply rounded-lg h-60 shadow-md bg-white hover:bg-secondary hover:scale-105
-           transition-all duration-300 grid grid-rows-4 grid-cols-4;
+    @apply rounded-lg h-60 shadow-md bg-white hover:scale-105
+           transition-all duration-500 grid grid-rows-4 grid-cols-4;
   }
 
   .data-title {

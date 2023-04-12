@@ -14,7 +14,7 @@ const SideBar = () => {
 }
 
 const SideBarIcon = ({ icon, text }) => (
-    <div className="flex w-auto items-center group hover:bg-secondary transition-all duration-300">
+    <div className="flex w-auto items-center group hover:bg-secondary transition-all duration-500">
         <img alt="icon" src={`../assets/${icon}.svg`}
              className="sidebar-icon group-hover:bg-accent
                         group-hover:rounded-xl group-hover:p-2"

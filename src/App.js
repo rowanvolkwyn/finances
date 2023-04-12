@@ -1,11 +1,13 @@
-import NavBar from "./scenes/NavBar.jsx";
-import ContentContainer from "./scenes/ContentContainer.jsx";
+import NavBar from "./components/NavBar.jsx";
+import SideBar from "./components/SideBar.jsx";
+import Dashboard from "./scenes/Dashboard.jsx";
 
 function App() {
   return (
-    <div>
+    <div className="fixed flex w-screen top-20">
         <NavBar />
-        <ContentContainer />
+        <SideBar />
+        <Dashboard />
     </div>
     
   );
