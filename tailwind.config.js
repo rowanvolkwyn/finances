@@ -11,8 +11,12 @@ module.exports = {
         secondary: '#172A3A',
         lightsecondary: '#457EB0',
         accent: '#F55D3E',
-        neutralgray: '#A83119',
+        neutralgray: '#EBEBEB',
         lightneutral: '#C4D7E8'
+      },
+
+      fontFamily: {
+        montserrat: 'Montserrat'
       }
     },
   },

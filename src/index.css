@@ -8,24 +8,32 @@
 
   .sidebar-icon {
     @apply relative flex items-center justify-center
-           h-16 w-16 my-4 mx-auto shadow-lg
-           bg-lightsecondary text-white
-           hover:bg-accent
-           rounded-3xl hover:rounded-xl
-           p-4 hover:p-2
-           transition-all duration-300;
+           h-16 w-16 my-4 mx-6 shadow-lg
+           bg-neutralgray rounded-3xl p-4 transition-all duration-300;
   }
 
   .sidebar-tooltip {
-    @apply absolute w-auto p-2 m-2 min-w-max left-14
-           rounded-md shadow-md text-white bg-gray-900
-           text-xs font-bold transition-all duration-100
-           scale-0 origin-left;
+    @apply content-center text-lg capitalize w-1/2 my-auto
+           mx-auto transition-all duration-300;
   }
 
   .panel {
-    @apply rounded-xl h-60 shadow-md bg-lightneutral hover:scale-105
-           hover:bg-secondary transition-all duration-300
+    @apply rounded-lg h-60 shadow-md bg-white hover:bg-secondary hover:scale-105
+           transition-all duration-300 grid grid-rows-4 grid-cols-4;
+  }
+
+  .data-title {
+    @apply text-secondary mt-5 ml-5 font-montserrat font-extrabold text-xl;
+  }
+
+  .data-change {
+    @apply text-secondary mt-5 mr-5 ml-auto text-right font-montserrat font-extrabold text-xl
+             ;
+  }
+
+  .data-value {
+    @apply text-secondary m-3 font-montserrat font-extrabold
+             text-[72px] text-center align-middle h-fit;
   }
 
 }
@@ -35,6 +43,6 @@ body,
 #root,
 .app {
     height: 100%;
-    background-color: #457EB0;
+    background-color: #F5F5F5;
     @apply text-white;
 }

@@ -1,27 +1,27 @@
-
-
 const SideBar = () => {
     return (
-        <div className="fixed top-[96px] left-0 h-screen w-1/12 m-0
-                        flex flex-col
-                        bg-secondary text-white shadow-md">
+        <div className="fixed left-0 h-screen w-64 m-0
+                        inline bg-white text-secondary">
                             
-            <SideBarIcon icon="dashboard" />
-            <SideBarIcon icon="graph" />
-            <SideBarIcon icon="target" />
-            <SideBarIcon icon="coins" />
-            <SideBarIcon icon="list" />
+            <SideBarIcon icon="dashboard" text="dashboard"/>
+            <SideBarIcon icon="graph" text="portfolio" />
+            <SideBarIcon icon="target" text="strategy"/>
+            <SideBarIcon icon="coins" text="budget" />
+            <SideBarIcon icon="list" text="transactions" />
             
         </div>
     )
 }
 
 const SideBarIcon = ({ icon, text }) => (
-    <div>
-        <img alt="icon" src={`../assets/${icon}.svg`} className="sidebar-icon"/>
-        <span className="sidebar-tooltip">
+    <div className="flex w-auto items-center group hover:bg-secondary transition-all duration-300">
+        <img alt="icon" src={`../assets/${icon}.svg`}
+             className="sidebar-icon group-hover:bg-accent
+                        group-hover:rounded-xl group-hover:p-2"
+        />
+        <div className="sidebar-tooltip group-hover:text-white" >
             {text}
-        </span>
+        </div>
     </div>
 )
 
