@@ -6,8 +6,6 @@ import Portfolio from "./scenes/Portfolio.jsx";
 import Strategy from "./scenes/Strategy.jsx";
 import Budget from "./scenes/Budget.jsx";
 import Transactions from "./scenes/Transactions.jsx";
-import { useState, useEffect } from 'react';
-
 
 function App() {
   return (
