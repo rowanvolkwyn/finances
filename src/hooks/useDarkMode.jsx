@@ -1,5 +1,25 @@
 import { useState } from "react"
 
+function useDarkMode() {
+    const [darkMode, setDarkMode] = useState(false);
+
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };  
+
+    useEffect(() => {
+        if (darkMode = true) {
+        document.documentElement.classList.add("dark");
+        } else {
+        document.documentElement.classList.remove("dark");
+        }
+    }, [darkMode]);
+
+    return [darkMode, toggleDarkMode]
+}
+
+
+/*
 const useLocalStorage = (key, initialValue) => {
     const [storedValue, setStoredValue] = useState(() => {
         try {
@@ -40,3 +60,5 @@ const useDarkMode = () => {
 };
 
 export default useDarkMode;
+
+*/
