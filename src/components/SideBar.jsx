@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const SideBar = () => {
+
     return (
-        <div className="fixed left-0 h-screen w-64 m-0
-                        inline bg-white text-secondary">
+        <div className="fixed left-0 h-screen w-64 m-0 inline bg-white text-secondary">
                             
             <SideBarIcon icon="dashboard" text="dashboard"/>
             <SideBarIcon icon="graph" text="portfolio" />
