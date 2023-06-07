@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SideBar = () => {
     return (
         <div className="fixed left-0 h-screen w-64 m-0
@@ -14,15 +16,18 @@ const SideBar = () => {
 }
 
 const SideBarIcon = ({ icon, text }) => (
-    <div className="flex w-auto items-center group hover:bg-secondary transition-all duration-500">
-        <img alt="icon" src={`../assets/${icon}.svg`}
-             className="sidebar-icon group-hover:bg-accent
-                        group-hover:rounded-xl group-hover:p-2"
-        />
-        <div className="sidebar-tooltip group-hover:text-white" >
-            {text}
+    <Link to={text}>
+        <div className="flex w-auto items-center group hover:bg-secondary transition-all duration-500">
+            <img alt="icon" src={`../assets/${icon}.svg`}
+                className="sidebar-icon group-hover:bg-accent
+                            group-hover:rounded-xl group-hover:p-2"
+            />
+            <div className="sidebar-tooltip group-hover:text-white" >
+                {text}
+            </div>
         </div>
-    </div>
+    </Link>
+
 )
 
 export default SideBar;

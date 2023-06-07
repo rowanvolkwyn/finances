@@ -33,7 +33,7 @@
 
   .data-value {
     @apply text-secondary m-3 font-montserrat font-extrabold
-             text-[72px] text-center align-middle h-fit;
+             text-[52px] text-center align-middle h-fit;
   }
 
 }
